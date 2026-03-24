@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>The Ouevre</h1>
+			<p class="tagline">A lifestyle blog.</p>
+			<hr />
+			<ul>
+				{
+					posts.map((post) => (
+						<li>
+							<a href={`/blog/${post.id}/`}>
+								<span class="post-title">{post.data.title}</span>
+								<span class="post-date"><FormattedDate date={post.data.pubDate} /></span>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	h1 {
+		font-size: 2em;
+		margin-bottom: 0.2em;
+	}
+	.tagline {
+		color: rgb(120, 120, 120);
+		font-size: 1em;
+		margin: 0 0 1.5em;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5em 0 0;
+	}
+	ul li {
+		border-bottom: 1px solid rgb(235, 235, 230);
+	}
+	ul li a {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 1em;
+		padding: 1em 0;
+		text-decoration: none;
+		color: rgb(26, 26, 26);
+	}
+	ul li a:hover .post-title {
+		color: rgb(120, 120, 120);
+	}
+	.post-title {
+		font-size: 1em;
+	}
+	.post-date {
+		font-size: 0.85em;
+		color: rgb(120, 120, 120);
+		white-space: nowrap;
+	}
+	@media (max-width: 480px) {
+		ul li a {
+			flex-direction: column;
+			gap: 0.2em;
+		}
+	}
+</style>
