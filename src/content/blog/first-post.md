@@ -1,7 +1,7 @@
 ---
 title: 'Welcome to The Ouevre'
 description: 'The first post on this blog — a place to begin.'
-pubDate: 'Mar 24 2026'
+pubDate: 'Mar 23 2026'
 ---
 
 Every blog starts somewhere. This is where this one starts.
