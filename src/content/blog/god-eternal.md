@@ -1,7 +1,7 @@
 ---
 title: ‘God Eternal’
 description: ‘Whatever changes there is one constant’
-pubDate: ‘Mar 27 2026’
+pubDate: ‘2026-03-27’
 ---
 I’ve seen the whispering sands of time\
 Scattered on desert dunes\
