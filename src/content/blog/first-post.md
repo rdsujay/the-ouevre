@@ -8,4 +8,4 @@ Every blog starts somewhere. This is where this one starts.
 
 *The Ouevre* is a space for writing about the texture of everyday life — the small things, the slow things, the things worth noticing.
 
-More posts to come. For now, this is enough.
+More posts to come.
