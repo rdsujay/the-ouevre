@@ -2,6 +2,7 @@
 title: 'God Eternal'
 description: 'Whatever changes there is one constant'
 pubDate: 'Mar 27 2026'
+heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 I've seen the whispering sands of time\
 Scattered on desert dunes\

@@ -2,6 +2,7 @@
 title: 'Welcome to The Ouevre'
 description: 'The first post on this blog — a place to begin.'
 pubDate: 'Mar 23 2026'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Every blog starts somewhere. This is where this one starts.

@@ -2,6 +2,7 @@
 title: 'Tranquility'
 description: 'Hope for a better tomorrow'
 pubDate: 'Mar 24 2026'
+heroImage: '../../assets/blog-placeholder-2.jpg'
 ---
 The sea still foams on the golden shore\
 Waves lap the crystal sand\
